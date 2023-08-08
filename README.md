@@ -8,10 +8,10 @@ Author: Petr Krajník
 
 ### Important note
 This is a&nbsp;*special version of RawDev for presentation
-purposes*. Therefore, the suffix GH (GitHub). It contains only 
+purposes*. Therefore, the suffix GH (GitHub). It contains only
 the main app core. The full project contains more stuff like
-unit testing, CUDA GPU-accelerated parts, etc. These parts are, 
-in my opinion, not ready to be published, or other circumstances, 
+unit testing, CUDA GPU-accelerated parts, etc. These parts are,
+in my opinion, not ready to be published, or other circumstances,
 like licenses, complicate the publication.
 
  What is RawDev
@@ -98,9 +98,9 @@ that we don't take full advantage of that technology.
 
  Multiple file processing
 --------------------------
-If we make panoramic photos, we make them from multiple raw 
-files that are merged together into one photograph. Maybe 
-we use some sort of bracketing or other advanced techniques, 
+If we make panoramic photos, we make them from multiple raw
+files that are merged together into one photograph. Maybe
+we use some sort of bracketing or other advanced techniques,
 as I&nbsp;do. But how to do it with this tool?
 
 I've considered making my own sidecar format, as ACR uses.
@@ -109,7 +109,7 @@ in reality we don't need them. We have a&nbsp;more powerful
 tool for doing that...
 
 We have the shell scripting engine of our operating system.
-And as we use a&nbsp;command-line tool, we could use them. We make 
+And as we use a&nbsp;command-line tool, we could use them. We make
 a&nbsp;building script where all the build instructions are
 stored. For example bracketing groups etc.
 
@@ -118,21 +118,21 @@ When some working example is ready I&nbsp;will add it here. TODO.
  Image rotation
 ----------------
 This is one thing that was intentionally omitted. It is handy
-to have the images rotated as they should be, but this would 
+to have the images rotated as they should be, but this would
 add complexity to the image data writers. For that reason,
-I've decided to leave the operation of rotating the image to 
+I've decided to leave the operation of rotating the image to
 another software, as this basic operation can do they all...
 
  Compile and run on Unix
 -------------------------
-The main development was on Windows. So the Unix support came 
-a little late. I've tested the program to run Unix-based 
-operating systems. That required to make many changes to 
-the codebase, so it is now platform independent. Also the 
-compilers on these systems raised some warnings that 
+The main development was on Windows. So the Unix support came
+a little late. I've tested the program to run Unix-based
+operating systems. That required to make many changes to
+the codebase, so it is now platform independent. Also the
+compilers on these systems raised some warnings that
 the Microsoft compiler hasn't.
 
-The program was compiled with `G++` and `CLANG++` with 
+The program was compiled with `G++` and `CLANG++` with
 the options `-Wall -pedantic`. Without any warnings!
 
 The memory correctness was verified with `valgrind`.
@@ -142,14 +142,14 @@ don't get any warnings or memory leaks.
 The testing OS was Fedora Linux 38 Workstation.
 
 ### Notes about the Makefile
-To build the program, we have a&nbsp;Makefile. We also have 
-a tool script named `makemake.sh` which (re)generates 
+To build the program, we have a&nbsp;Makefile. We also have
+a tool script named `makemake.sh` which (re)generates
 the makefile capturing the source/header file dependencies.
-When we make some changes to the project files we should 
-consider to rebuild the makefile to keep the dependencies up 
+When we make some changes to the project files we should
+consider to rebuild the makefile to keep the dependencies up
 to date.
 
-The make script gives its output to `stdout`, so it should 
+The make script gives its output to `stdout`, so it should
 be redirected to the makefile file. The command could look
 like this
 
