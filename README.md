@@ -158,4 +158,4 @@ tools/makemake.sh > Makefile
 ```
  License
 ---------
-License is GPLv3 or greater. See `LICENSE.md`.
+License is GPLv3 or later. See `LICENSE.md`.
