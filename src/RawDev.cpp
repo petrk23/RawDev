@@ -210,7 +210,7 @@ void RawDev::printVersion() const
 	printLogo(); // Print logo message
 	cout << endl;
 	cout << "Version " RAWDEV_VERSION << " (GitHub demonstration version)" << endl;
-	cout << "License GPLv3 or greater. See LICENSE.md." << endl;
+	cout << "License GPLv3 or later. See LICENSE.md." << endl;
 	cout << "Build " << __DATE__ << " " << __TIME__ << endl;
 	return;
 }
