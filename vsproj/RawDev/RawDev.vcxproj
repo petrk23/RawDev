@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\CamProfiles\CamProfile.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\CFAPattern.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D\Cam5D.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D\Cam7D.cpp" />
+    <ClCompile Include="..\..\src\CmdLineParser.cpp" />
+    <ClCompile Include="..\..\src\Color.cpp" />
+    <ClCompile Include="..\..\src\ColorProfiles\AdobeRGB1998-icc.cpp" />
+    <ClCompile Include="..\..\src\ColorProfiles\srgb-icc.cpp" />
+    <ClCompile Include="..\..\src\Demosaic.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\AHD.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\Bilinear.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\Freeman.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\HQLinear.cpp" />
+    <ClCompile Include="..\..\src\Denoise.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\ByteTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\CR2Reader.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\HuffTree.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\LongTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\RationalTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\ShortTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\StringTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\TagFactory.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\TiffDir.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\TiffWriter.cpp" />
+    <ClCompile Include="..\..\src\Logger.cpp" />
+    <ClCompile Include="..\..\src\Main.cpp" />
+    <ClCompile Include="..\..\src\Options.cpp" />
+    <ClCompile Include="..\..\src\Output.cpp" />
+    <ClCompile Include="..\..\src\ProcRGB.cpp" />
+    <ClCompile Include="..\..\src\RawDev.cpp" />
+    <ClCompile Include="..\..\src\Scale.cpp" />
+    <ClCompile Include="..\..\src\Structures\HSVMap.cpp" />
+    <ClCompile Include="..\..\src\Structures\Image.cpp" />
+    <ClCompile Include="..\..\src\Structures\Mat3x3.cpp" />
+    <ClCompile Include="..\..\src\Structures\Path.cpp" />
+    <ClCompile Include="..\..\src\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\CamProfiles\CamID.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\CamProfile.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\CFAPattern.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D2\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D3\HSVMap1.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D3\HSVMap2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D3\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D4\hsvMap1.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D4\hsvMap2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D4\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5DsR\hsvMap1.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5DsR\hsvMap2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5DsR\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5DsR\toneCurve.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5Ds\HSVMap1.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5Ds\HSVMap2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5Ds\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5Ds\toneCurve.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D\Cam5D.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D2\HSVMap1.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D2\HSVMap2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D2\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D\Cam6D.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D\hsvMap1.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D\hsvMap2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D2\HSVMap1.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D2\HSVMap2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D2\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D\Cam7D.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D\profLookMap.hpp" />
+    <ClInclude Include="..\..\src\CmdLineArgument.hpp" />
+    <ClInclude Include="..\..\src\CmdLineParser.hpp" />
+    <ClInclude Include="..\..\src\Color.hpp" />
+    <ClInclude Include="..\..\src\ColorProfiles\AdobeRGB1998-icc.hpp" />
+    <ClInclude Include="..\..\src\ColorProfiles\ColorProfile.hpp" />
+    <ClInclude Include="..\..\src\ColorProfiles\srgb-icc.hpp" />
+    <ClInclude Include="..\..\src\Demosaic.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\AHD.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\Algorithm.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\AlgorithmType.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\Bilinear.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\Freeman.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\HQLinear.hpp" />
+    <ClInclude Include="..\..\src\Denoise.hpp" />
+    <ClInclude Include="..\..\src\Exception.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\ByteTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\CR2Reader.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\HuffTree.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\LongTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\RationalTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\RawHeader.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\ShortTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\StringTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TagFactory.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffDir.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffHeader.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffWriter.hpp" />
+    <ClInclude Include="..\..\src\Logger.hpp" />
+    <ClInclude Include="..\..\src\NonCopyable.hpp" />
+    <ClInclude Include="..\..\src\Options.hpp" />
+    <ClInclude Include="..\..\src\Output.hpp" />
+    <ClInclude Include="..\..\src\ProcRGB.hpp" />
+    <ClInclude Include="..\..\src\RawDev.hpp" />
+    <ClInclude Include="..\..\src\Scale.hpp" />
+    <ClInclude Include="..\..\src\StopWatch.hpp" />
+    <ClInclude Include="..\..\src\Structures\Array2D.hpp" />
+    <ClInclude Include="..\..\src\Structures\Cache.hpp" />
+    <ClInclude Include="..\..\src\Structures\HSVMap.hpp" />
+    <ClInclude Include="..\..\src\Structures\Image.hpp" />
+    <ClInclude Include="..\..\src\Structures\LUT.hpp" />
+    <ClInclude Include="..\..\src\Structures\Mat3x3.hpp" />
+    <ClInclude Include="..\..\src\Structures\Path.hpp" />
+    <ClInclude Include="..\..\src\Structures\Rect.hpp" />
+    <ClInclude Include="..\..\src\Utils.hpp" />
+    <ClInclude Include="..\..\src\Version.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md" />
+    <None Include="..\..\Makefile" />
+    <None Include="..\..\README.md" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{0E67A072-24D8-455D-BBC8-2BDFAE52F62B}</ProjectGuid>
+    <RootNamespace>RawDev</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies);</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/Qvec-report:1 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
