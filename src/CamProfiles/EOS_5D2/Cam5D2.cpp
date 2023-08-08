@@ -53,7 +53,7 @@ Cam5D2::Cam5D2(double temperature)
 	// Active area on the sensor (from exif)
 	CamProfile::m_activeArea = { 158, 51, 5792, 3804 };
 
-	// Camera crop 
+	// Camera crop
 	// CamProfile::m_crop = Rect::CreateRect(168, 56, 5616, 3744);
 	// but for clean output it must be tighter...
 	CamProfile::m_crop = Rect::CreateRect(168, 57, 5616, 3742);

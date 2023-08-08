@@ -25,7 +25,7 @@
  * B ... Minor version number
  * C ... Optional for bugfixes
  * GH .. Stands for special GitHub version
- * 
+ *
  * Note: If the version number changes, don't forget
  * to also change the version in the readme file!
  */

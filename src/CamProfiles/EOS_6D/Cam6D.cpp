@@ -77,7 +77,7 @@ Cam6D::Cam6D(double temperature)
 	// HSV maps
 	CamProfile::m_hsvMap = std::make_shared<HSVMap>(
 		90, 30, 1, // Dimensions
-		Cam6D::k_HSVMapData1, m_illu1, 
+		Cam6D::k_HSVMapData1, m_illu1,
 		Cam6D::k_HSVMapData2, m_illu2, temperature);
 	CamProfile::m_profileLook = std::make_shared<HSVMap>(
 		36, 8, 16, Cam6D::k_ProfileLookTableData);
