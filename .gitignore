@@ -8,8 +8,8 @@ deps/*
 !deps/README.md
 
 # Test data (very large)
-test/data/*
-!test/data/README.md
+# test/data/*
+# !test/data/README.md
 
 # User-specific files
 *.rsuser
