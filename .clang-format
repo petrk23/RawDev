@@ -1,0 +1,33 @@
+---
+BasedOnStyle: LLVM
+Language: Cpp
+
+#===========================================#
+# Style options should remain sorted        #
+# to enable better orientation and search.  #
+#===========================================#
+
+AccessModifierOffset: -4
+AlignAfterOpenBracket: DontAlign
+AlignArrayOfStructures: None
+AlignEscapedNewlines: Left
+AllowShortLambdasOnASingleLine: None
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBraces: Stroustrup
+ColumnLimit: 0 # Repsect my breaks...
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: false
+PointerAlignment: Left
+SortIncludes: Never
+SpaceAfterTemplateKeyword: false
+...
+
+#==================#
+# Other code rules #
+#==================#
+
+# * File encoding UTF-8 without BOM.
+# * Column count should not exceed 80 characters.
+# * Be aware of auto merging long expressions into signle line. 
+#   To prevent this, make a hard newline AFTER suitable operator!
+# * Use spaces for indenting. Not tabs!

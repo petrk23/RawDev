@@ -1,0 +1,46 @@
+## clang-tidy configuration for RawDev
+
+Checks: >
+  -*,
+  clang-analyzer-*,
+  bugprone-*,
+  readability-*,
+  -readability-identifier-length,
+  -readability-magic-numbers,
+  -readability-isolate-declaration,
+  modernize-*,
+  -modernize-use-trailing-return-type,
+  -modernize-avoid-c-arrays,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-pro-bounds-constant-array-index,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -cppcoreguidelines-avoid-c-arrays,
+  portability-*,
+  performance-*,
+  -performance-avoid-endl
+
+## openmp-* checks intentionally omitted!
+
+CheckOptions:
+  readability-identifier-naming.ClassCase: 'CamelCase'
+  readability-identifier-naming.ClassConstantCase: 'camelBack'
+  readability-identifier-naming.ClassConstantPrefix: 'k_'
+  readability-identifier-naming.ClassMemberCase: 'CamelCase'
+  readability-identifier-naming.ClassMethodCase: 'CamelCase'
+  readability-identifier-naming.EnumCase: 'CamelCase'
+  readability-identifier-naming.EnumConstantCase: 'CamelCase'
+  readability-identifier-naming.FunctionCase: 'camelBack'
+  readability-identifier-naming.GlobalConstantCase: 'camelBack'
+  readability-identifier-naming.GlobalConstantPrefix: 'k_'
+  readability-identifier-naming.MacroDefinitionCase: 'UPPER_CASE'
+  readability-identifier-naming.MemberCase: 'camelBack'
+  readability-identifier-naming.MethodCase: 'camelBack'
+  readability-identifier-naming.NamespaceCase: 'CamelCase'
+  readability-identifier-naming.PrivateMemberCase: 'camelBack'
+  readability-identifier-naming.PrivateMemberPrefix: 'm_'
+  readability-identifier-naming.ProtectedMemberCase: 'camelBack'
+  readability-identifier-naming.ProtectedMemberPrefix: 'm_'
+  readability-identifier-naming.TemplateParameterCase: 'CamelCase'
+  readability-identifier-naming.TypeAliasCase: 'CamelCase'
+  readability-identifier-naming.TypedefCase: 'CamelCase'
+  readability-identifier-naming.VariableCase: 'camelBack'

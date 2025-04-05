@@ -1,0 +1,47 @@
+/*
+ * This file is part of RawDev;
+ * see <https://github.com/petrk23/RawDev>.
+ *
+ * Copyright (C) 2020-2025 Petr Krajník
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+#include "pch.hpp"
+#include "CamProfiles/AllCamProfiles.hpp"
+
+/*
+CamProfile is a abstract class so we test
+only factory methods here!
+*/
+
+constexpr double k_temperature = 5'500;
+
+TEST(CamProfileTest, NameFactoryTest)
+{
+    for (const auto& name : k_camNames) {
+        const auto profile = CamProfile::MakeCamProfile(name, k_temperature);
+        EXPECT_FALSE(profile == nullptr);
+        EXPECT_EQ(profile->getCameraName().compare(name), 0);
+    }
+}
+
+TEST(CamProfileTest, IdFactoryTest)
+{
+    for (const auto id : k_camIDs) {
+        const auto profile = CamProfile::MakeCamProfile(id, k_temperature);
+        EXPECT_FALSE(profile == nullptr);
+        EXPECT_EQ(profile->getCameraID(), id);
+    }
+}

@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Demosaic">
+      <UniqueIdentifier>{835fe1d0-6bf9-49b2-99bc-c557543dfa5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Demosaic">
+      <UniqueIdentifier>{a48afb99-a510-42c2-89c8-94a91ccb48f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data structures">
+      <UniqueIdentifier>{696c8a07-0ed6-4a7a-89ff-a8dcbedcd01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data structures">
+      <UniqueIdentifier>{b6e40393-f034-4b1c-8232-88c73da319fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ImageIO">
+      <UniqueIdentifier>{6c8ba61f-3890-4c8f-9f97-10a6cc64310f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImageIO">
+      <UniqueIdentifier>{8144fdfd-6f9c-4369-8b8b-f2ab2ec351ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera Profiles">
+      <UniqueIdentifier>{2b22375b-4082-48d8-8399-9d01545345c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles">
+      <UniqueIdentifier>{8f63ffc6-7984-4873-91ab-edacab403c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ColorProfiles">
+      <UniqueIdentifier>{e885b6eb-1c71-47c4-a90e-9d4798c5b30b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ColorProfiles">
+      <UniqueIdentifier>{fa09e142-4df2-4554-8883-553093a250b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{6e8cf409-414b-4c99-9c2a-5cd79d7c4381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 1DX">
+      <UniqueIdentifier>{f451e4af-ca40-4f28-826c-9bbfa0205215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 1DX Mark II">
+      <UniqueIdentifier>{73a67d8f-9fa9-45b0-9526-cafeb7600501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 5D">
+      <UniqueIdentifier>{36d0e982-6a7b-421a-86b9-ec9b64d5c5f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 5D Mark II">
+      <UniqueIdentifier>{a716dd56-7a75-4ba8-8304-114f3e3e92c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 5D Mark III">
+      <UniqueIdentifier>{97006914-e779-46d1-a999-052614b53bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 5D Mark IV">
+      <UniqueIdentifier>{d0e318b7-6b9f-4a96-ba68-faa34dfd6df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 5Ds">
+      <UniqueIdentifier>{5d1ef0b7-bd3b-4805-a871-2c57f0cc8791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 5DsR">
+      <UniqueIdentifier>{2a11bbef-8caf-43c2-80e3-ff27538b7f3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 6D">
+      <UniqueIdentifier>{19fdeed9-47ec-487c-abd7-a1ff6d0883b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 6D Mark II">
+      <UniqueIdentifier>{e40ce392-3e52-448b-8852-55b0d62b9070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 7D">
+      <UniqueIdentifier>{39b5ae82-f4a8-4c23-a01e-1b246f36d1ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 7D Mark II">
+      <UniqueIdentifier>{3f8e8f49-8006-4442-afba-2662fce2ba6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 77D">
+      <UniqueIdentifier>{6edfd96f-90e9-4d27-919b-4e2f69b0bdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Profiles\Canon EOS 80D">
+      <UniqueIdentifier>{be3123a1-171f-4fc5-a5fe-f5642c63440b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera Profiles\Canon EOS">
+      <UniqueIdentifier>{d93b623f-70cb-4f18-b8e3-7eed7bed07d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\CmdLineParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Demosaic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Output.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ProcRGB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\RawDev.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Scale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\ByteTag.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\CR2Reader.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\HuffTree.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\LongTag.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\RationalTag.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\ShortTag.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\StringTag.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\TagFactory.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\TiffDir.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImageIO\TiffWriter.cpp">
+      <Filter>Source Files\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Demosaic\AHD.cpp">
+      <Filter>Source Files\Demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Demosaic\Bilinear.cpp">
+      <Filter>Source Files\Demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Demosaic\Freeman.cpp">
+      <Filter>Source Files\Demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Demosaic\HQLinear.cpp">
+      <Filter>Source Files\Demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Structures\HSVMap.cpp">
+      <Filter>Source Files\Data structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Structures\Image.cpp">
+      <Filter>Source Files\Data structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Structures\Mat3x3.cpp">
+      <Filter>Source Files\Data structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Structures\Path.cpp">
+      <Filter>Source Files\Data structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\CamProfile.cpp">
+      <Filter>Source Files\Camera Profiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\CFAPattern.cpp">
+      <Filter>Source Files\Camera Profiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ColorProfiles\AdobeRGB1998-icc.cpp">
+      <Filter>Source Files\ColorProfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ColorProfiles\srgb-icc.cpp">
+      <Filter>Source Files\ColorProfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ArtistNameValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\WhiteBalance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 1DX Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D\Cam5D.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark III</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark III</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark III</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark III</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark IV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark IV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark IV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5D Mark IV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5Ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5Ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5Ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5Ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5DsR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5DsR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5DsR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 5DsR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 6D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D\Cam7D.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 7D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D\Cam7D-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 7D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 7D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 7D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 7D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 7D Mark II</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 77D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 77D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 77D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 77D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 80D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D-hsv1.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 80D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D-hsv2.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 80D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D-prlook.cpp">
+      <Filter>Source Files\Camera Profiles\Canon EOS 80D</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\CmdLineArgument.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CmdLineParser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Color.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Demosaic.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Exception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\NonCopyable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Options.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Output.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ProcRGB.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\RawDev.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Scale.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\StopWatch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\ByteTag.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\CR2Reader.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\HuffTree.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\LongTag.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\RationalTag.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\RawHeader.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\ShortTag.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\StringTag.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\TagFactory.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\TiffDir.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\TiffHeader.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\TiffTag.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageIO\TiffWriter.hpp">
+      <Filter>Header Files\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Demosaic\AHD.hpp">
+      <Filter>Header Files\Demosaic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Demosaic\Algorithm.hpp">
+      <Filter>Header Files\Demosaic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Demosaic\AlgorithmType.hpp">
+      <Filter>Header Files\Demosaic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Demosaic\Bilinear.hpp">
+      <Filter>Header Files\Demosaic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Demosaic\Freeman.hpp">
+      <Filter>Header Files\Demosaic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Demosaic\HQLinear.hpp">
+      <Filter>Header Files\Demosaic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Structures\Array2D.hpp">
+      <Filter>Header Files\Data structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Structures\HSVMap.hpp">
+      <Filter>Header Files\Data structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Structures\Image.hpp">
+      <Filter>Header Files\Data structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Structures\Mat3x3.hpp">
+      <Filter>Header Files\Data structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Structures\Path.hpp">
+      <Filter>Header Files\Data structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Structures\Rect.hpp">
+      <Filter>Header Files\Data structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\CamID.hpp">
+      <Filter>Header Files\Camera Profiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\CamProfile.hpp">
+      <Filter>Header Files\Camera Profiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\CFAPattern.hpp">
+      <Filter>Header Files\Camera Profiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ColorProfiles\AdobeRGB1998-icc.hpp">
+      <Filter>Header Files\ColorProfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ColorProfiles\srgb-icc.hpp">
+      <Filter>Header Files\ColorProfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ColorProfiles\ColorProfile.hpp">
+      <Filter>Header Files\ColorProfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Logger.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Structures\Point.hpp">
+      <Filter>Header Files\Data structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ArtistNameValidator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\WhiteBalance.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\CamProfileHelpers.hpp">
+      <Filter>Header Files\Camera Profiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D\Cam5D.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D\Cam6D.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D\Cam7D.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_77D\Cam77D.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\EOS_80D\Cam80D.hpp">
+      <Filter>Header Files\Camera Profiles\Canon EOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CamProfiles\AllCamProfiles.hpp">
+      <Filter>Header Files\Camera Profiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Filter>Other Files</Filter>
+    </None>
+    <None Include="..\..\TODO.md">
+      <Filter>Other Files</Filter>
+    </None>
+    <None Include="..\..\.clang-format">
+      <Filter>Other Files</Filter>
+    </None>
+    <None Include="..\..\.clang-tidy">
+      <Filter>Other Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

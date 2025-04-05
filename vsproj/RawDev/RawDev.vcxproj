@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ArtistNameValidator.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\CamProfile.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\CFAPattern.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_5D\Cam5D.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_6D\Cam6D.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_77D\Cam77D.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D\Cam7D-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_7D\Cam7D.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D-hsv1.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D-hsv2.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D-prlook.cpp" />
+    <ClCompile Include="..\..\src\CamProfiles\EOS_80D\Cam80D.cpp" />
+    <ClCompile Include="..\..\src\CmdLineParser.cpp" />
+    <ClCompile Include="..\..\src\Color.cpp" />
+    <ClCompile Include="..\..\src\ColorProfiles\AdobeRGB1998-icc.cpp" />
+    <ClCompile Include="..\..\src\ColorProfiles\srgb-icc.cpp" />
+    <ClCompile Include="..\..\src\Demosaic.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\AHD.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\Bilinear.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\Freeman.cpp" />
+    <ClCompile Include="..\..\src\Demosaic\HQLinear.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\ByteTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\CR2Reader.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\HuffTree.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\LongTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\RationalTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\ShortTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\StringTag.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\TagFactory.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\TiffDir.cpp" />
+    <ClCompile Include="..\..\src\ImageIO\TiffWriter.cpp" />
+    <ClCompile Include="..\..\src\Logger.cpp" />
+    <ClCompile Include="..\..\src\Options.cpp" />
+    <ClCompile Include="..\..\src\Output.cpp" />
+    <ClCompile Include="..\..\src\ProcRGB.cpp" />
+    <ClCompile Include="..\..\src\RawDev.cpp" />
+    <ClCompile Include="..\..\src\Scale.cpp" />
+    <ClCompile Include="..\..\src\Structures\HSVMap.cpp" />
+    <ClCompile Include="..\..\src\Structures\Image.cpp" />
+    <ClCompile Include="..\..\src\Structures\Mat3x3.cpp" />
+    <ClCompile Include="..\..\src\Structures\Path.cpp" />
+    <ClCompile Include="..\..\src\Utils.cpp" />
+    <ClCompile Include="..\..\src\WhiteBalance.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\ArtistNameValidator.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\AllCamProfiles.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\CamID.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\CamProfile.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\CamProfileHelpers.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\CFAPattern.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_1DX2\Cam1DX2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_1DX\Cam1DX.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D2\Cam5D2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D3\Cam5D3.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D4\Cam5D4.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5DsR\Cam5DsR.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5Ds\Cam5Ds.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_5D\Cam5D.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D2\Cam6D2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_6D\Cam6D.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_77D\Cam77D.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D2\Cam7D2.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_7D\Cam7D.hpp" />
+    <ClInclude Include="..\..\src\CamProfiles\EOS_80D\Cam80D.hpp" />
+    <ClInclude Include="..\..\src\CmdLineArgument.hpp" />
+    <ClInclude Include="..\..\src\CmdLineParser.hpp" />
+    <ClInclude Include="..\..\src\Color.hpp" />
+    <ClInclude Include="..\..\src\ColorProfiles\AdobeRGB1998-icc.hpp" />
+    <ClInclude Include="..\..\src\ColorProfiles\ColorProfile.hpp" />
+    <ClInclude Include="..\..\src\ColorProfiles\srgb-icc.hpp" />
+    <ClInclude Include="..\..\src\Demosaic.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\AHD.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\Algorithm.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\AlgorithmType.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\Bilinear.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\Freeman.hpp" />
+    <ClInclude Include="..\..\src\Demosaic\HQLinear.hpp" />
+    <ClInclude Include="..\..\src\Exception.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\ByteTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\CR2Reader.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\HuffTree.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\LongTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\RationalTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\RawHeader.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\ShortTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\StringTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TagFactory.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffDir.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffHeader.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffTag.hpp" />
+    <ClInclude Include="..\..\src\ImageIO\TiffWriter.hpp" />
+    <ClInclude Include="..\..\src\Logger.hpp" />
+    <ClInclude Include="..\..\src\NonCopyable.hpp" />
+    <ClInclude Include="..\..\src\Options.hpp" />
+    <ClInclude Include="..\..\src\Output.hpp" />
+    <ClInclude Include="..\..\src\ProcRGB.hpp" />
+    <ClInclude Include="..\..\src\RawDev.hpp" />
+    <ClInclude Include="..\..\src\Scale.hpp" />
+    <ClInclude Include="..\..\src\StopWatch.hpp" />
+    <ClInclude Include="..\..\src\Structures\Array2D.hpp" />
+    <ClInclude Include="..\..\src\Structures\HSVMap.hpp" />
+    <ClInclude Include="..\..\src\Structures\Image.hpp" />
+    <ClInclude Include="..\..\src\Structures\Mat3x3.hpp" />
+    <ClInclude Include="..\..\src\Structures\Path.hpp" />
+    <ClInclude Include="..\..\src\Structures\Point.hpp" />
+    <ClInclude Include="..\..\src\Structures\Rect.hpp" />
+    <ClInclude Include="..\..\src\Utils.hpp" />
+    <ClInclude Include="..\..\src\Version.hpp" />
+    <ClInclude Include="..\..\src\WhiteBalance.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\.clang-format" />
+    <None Include="..\..\.clang-tidy" />
+    <None Include="..\..\README.md" />
+    <None Include="..\..\TODO.md" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{0E67A072-24D8-455D-BBC8-2BDFAE52F62B}</ProjectGuid>
+    <TargetName>RawDevLib</TargetName>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\RawDevShared.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\RawDevShared.props" />
+    <Import Project="..\RawDevRelease.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

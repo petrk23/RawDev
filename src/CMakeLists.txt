@@ -1,0 +1,87 @@
+## RawDev main static library CMake file
+
+## Main source codebase as static library
+add_library(RawDevLib STATIC
+    ArtistNameValidator.cpp
+    ArtistNameValidator.hpp
+    CmdLineArgument.hpp
+    CmdLineParser.cpp
+    CmdLineParser.hpp
+    Color.cpp
+    Color.hpp
+    ColorProfiles/AdobeRGB1998-icc.cpp
+    ColorProfiles/AdobeRGB1998-icc.hpp
+    ColorProfiles/ColorProfile.hpp
+    ColorProfiles/srgb-icc.cpp
+    ColorProfiles/srgb-icc.hpp
+    Demosaic.cpp
+    Demosaic.hpp
+    Demosaic/AHD.cpp
+    Demosaic/AHD.hpp
+    Demosaic/Algorithm.hpp
+    Demosaic/AlgorithmType.hpp
+    Demosaic/Bilinear.cpp
+    Demosaic/Bilinear.hpp
+    Demosaic/Freeman.cpp
+    Demosaic/Freeman.hpp
+    Demosaic/HQLinear.cpp
+    Demosaic/HQLinear.hpp
+    Exception.hpp
+    ImageIO/ByteTag.cpp
+    ImageIO/ByteTag.hpp
+    ImageIO/CR2Reader.cpp
+    ImageIO/CR2Reader.hpp
+    ImageIO/HuffTree.cpp
+    ImageIO/HuffTree.hpp
+    ImageIO/LongTag.cpp
+    ImageIO/LongTag.hpp
+    ImageIO/RationalTag.cpp
+    ImageIO/RationalTag.hpp
+    ImageIO/RawHeader.hpp
+    ImageIO/ShortTag.cpp
+    ImageIO/ShortTag.hpp
+    ImageIO/StringTag.cpp
+    ImageIO/StringTag.hpp
+    ImageIO/TagFactory.cpp
+    ImageIO/TagFactory.hpp
+    ImageIO/TiffDir.cpp
+    ImageIO/TiffDir.hpp
+    ImageIO/TiffHeader.hpp
+    ImageIO/TiffTag.hpp
+    ImageIO/TiffWriter.cpp
+    ImageIO/TiffWriter.hpp
+    Logger.cpp
+    Logger.hpp
+    NonCopyable.hpp
+    Options.cpp
+    Options.hpp
+    Output.cpp
+    Output.hpp
+    ProcRGB.cpp
+    ProcRGB.hpp
+    RawDev.cpp
+    RawDev.hpp
+    Scale.cpp
+    Scale.hpp
+    StopWatch.hpp
+    Structures/Array2D.hpp
+    Structures/HSVMap.cpp
+    Structures/HSVMap.hpp
+    Structures/Image.cpp
+    Structures/Image.hpp
+    Structures/Mat3x3.cpp
+    Structures/Mat3x3.hpp
+    Structures/Path.cpp
+    Structures/Path.hpp
+    Structures/Point.hpp
+    Structures/Rect.hpp
+    Utils.cpp
+    Utils.hpp
+    Version.hpp
+    WhiteBalance.cpp
+    WhiteBalance.hpp
+)
+add_subdirectory(CamProfiles)
+
+target_link_libraries(RawDevLib
+    PUBLIC CamProfilesLib OpenMP::OpenMP_CXX)
