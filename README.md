@@ -4,6 +4,10 @@ RawDev
 
 Version 2.0, April 2025
 
+[![Build and test](
+https://github.com/petrk23/RawDev/actions/workflows/build.yml/badge.svg)](
+https://github.com/petrk23/RawDev/actions/workflows/build.yml)
+
 What is RawDev
 --------------
 RawDev is a command-line tool that takes RAW file from the camera
