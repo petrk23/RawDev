@@ -7,6 +7,9 @@
 deps/*
 !deps/README.md
 
+# Vim swp files
+*.swp
+
 # Test data (very large)
 test/data/*
 !test/data/README.md
