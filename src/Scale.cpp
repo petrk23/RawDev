@@ -99,20 +99,20 @@ void ScaleModule::process(Image &img)
     printScale(nullptr, baseExposure, true);
 
     // Compute white balance
-    WhiteBalance wb(m_ColorTemp, m_Tint);
+    const WhiteBalance wb(m_ColorTemp, m_Tint);
     const WhiteBalance::Scale wbScales = wb.calcScales(*m_CamProfile);
     RawDev::verbout << "White balance scales are";
     RawDev::verbout.newline();
-    printScale("R =", wbScales.r); // Scales on newline
-    printScale("G =", wbScales.g);
-    printScale("B =", wbScales.b, true);
+    printScale("R =", wbScales.rs); // Scales on newline
+    printScale("G =", wbScales.gs);
+    printScale("B =", wbScales.bs, true);
 
     // Compute scales
     double scaleR, scaleG, scaleB;
     const Color::RGB64 white = m_CamProfile->getWhiteLevel();
-    scaleR = wbScales.r * baseExposure / (white.r - black);
-    scaleG = wbScales.g * baseExposure / (white.g - black);
-    scaleB = wbScales.b * baseExposure / (white.b - black);
+    scaleR = wbScales.rs * baseExposure / (white.r - black);
+    scaleG = wbScales.gs * baseExposure / (white.g - black);
+    scaleB = wbScales.bs * baseExposure / (white.b - black);
 
     // Main scaling
     scale(img, black, scaleR, scaleG, scaleB);

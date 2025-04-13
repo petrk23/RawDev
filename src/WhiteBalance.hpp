@@ -20,54 +20,55 @@
 
 #pragma once
 
-namespace Color { struct CIEuv; struct RGB64; }
+namespace Color {
+struct CIEuv;
+struct RGB64;
+} // namespace Color
+
 class CamProfile;
 
 class WhiteBalance {
-    struct Ruvt { // r is temp. in mireds
-        double r, u, v, t;
-    };
-
-    static const Ruvt k_tempTable[];
-    static constexpr int k_tintScale = -3000; // Tint scale to match DNG/ACR
-
-    double m_colorTemp;
-    int m_tint;
-
 public:
     struct Scale {
-        double r, g, b;
+        double rs, gs, bs;
     };
 
-    constexpr WhiteBalance(double colorTemp, int tint);
+    WhiteBalance(double colorTemp, int tint);
 
-    [[nodiscard]] constexpr double getColorTemperature() const;
-    [[nodiscard]] constexpr int getTint() const;
+    [[nodiscard]] double getColorTemperature() const noexcept;
+    [[nodiscard]] int getTint() const noexcept;
     [[nodiscard]] Scale calcScales(const CamProfile& camProfile) const;
 
 private:
     [[nodiscard]] auto getRefCameraNeutral(const CamProfile& camProfile) const;
     [[nodiscard]] Scale calcWhiteBalance(const CamProfile& camProfile) const;
+    [[nodiscard]] bool applyTintRequested() const;
     void applyTint(int index, Color::CIEuv& uv, double weight) const;
+
     [[nodiscard]] static int FindNearestTempIndex(double miredTemp);
     [[nodiscard]] static Scale
     InvertAndNormalizeScales(const Color::RGB64& refCameraNeutral);
+
+    struct Muvt { // m is temperature in mireds
+        double m, u, v, t;
+    };
+    static const Muvt k_tempMap[];
+
+    // Tint scale to match DNG/ACR
+    static constexpr double k_tintScale = -1.0/3000.0;
+
+    double m_colorTemp;
+    int m_tint;
 };
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// NOLINTNEXTLINE(bugprone-easily-swappable-parameters)
-constexpr WhiteBalance::WhiteBalance(double colorTemp, int tint)
-    : m_colorTemp(colorTemp), m_tint(tint)
-{
-}
-
-constexpr double WhiteBalance::getColorTemperature() const
+inline double WhiteBalance::getColorTemperature() const noexcept
 {
     return m_colorTemp;
 }
 
-constexpr int WhiteBalance::getTint() const
+inline int WhiteBalance::getTint() const noexcept
 {
     return m_tint;
 }
@@ -76,4 +77,9 @@ inline WhiteBalance::Scale
 WhiteBalance::calcScales(const CamProfile& camProfile) const
 {
     return calcWhiteBalance(camProfile);
+}
+
+inline bool WhiteBalance::applyTintRequested() const
+{
+    return m_tint != 0;
 }
