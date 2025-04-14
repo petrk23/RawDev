@@ -148,6 +148,16 @@ PascalCase name RawDev, which distinguishes it from other tools
 on Unix. See it as a product name, which is consequently used
 inside the whole project.
 
+#### Why we begin with version 2.0? What was before?
+
+Before version 2.0, there were two versions of RawDev. The first
+one was a private repository where the project development
+happened. The second was a limited demo version based on version
+1.2, here on GitHub, which was not maintained. After completing
+version 1.18, I've decided to have only one, which is public and
+maintained here on GitHub. Reaching this milestone, let me
+advance the version number to 2.0.
+
 #### How to process multiple images
 
 The program is a command-line program, so we can use shell
