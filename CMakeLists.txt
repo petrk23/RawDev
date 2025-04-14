@@ -29,6 +29,7 @@ add_subdirectory(src)
 ## Main executable
 add_executable(RawDev src/Main.cpp)
 target_link_libraries(RawDev PRIVATE RawDevLib)
+install(TARGETS RawDev)
 
 enable_testing()
 add_subdirectory(test)

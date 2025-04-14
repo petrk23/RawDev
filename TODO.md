@@ -1,12 +1,6 @@
 TODO list
 =========
-Last updated 2025-04-01
-
-CMake install
--------------
-With CMake, we can install or pack (CPack) the software.
-Both features are not used at this moment. This would enable
-to install the software by CMake or generate an installer.
+Last updated 2025-04-13
 
 Coding style issues and inconsistencies
 ---------------------------------------

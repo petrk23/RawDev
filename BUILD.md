@@ -45,9 +45,21 @@ will be run. All of them must pass!
 
 Installing
 ----------
-RawDev is a single executable. So the installation is done by
-simply copying to the target destination. On Windows, I recommend
-using `Program Files` as destination.
+RawDev is a single executable. So the installation is done
+by simply copying it to the target destination. On Windows,
+I recommend using `Program Files` as destination.
+
+We can also use CMake to do this.
+```
+cmake --install build
+```
+The command above installs RawDev to the correct system directory.
+This will, of course, require having elevated user privileges.
+
+For local installation, use the `--prefix` switch.
+```
+cmake --install build --prefix <install dir>
+```
 
 Alternative for Windows
 -----------------------
