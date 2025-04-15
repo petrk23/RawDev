@@ -110,6 +110,7 @@ inline Array2D<T>& Array2D<T>::operator=(const Array2D& src)
         m_colBasePtr.reset(); // Release current memory
         clone(src);           // Copy src content
     }
+    return *this;
 }
 
 template<typename T>
