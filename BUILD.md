@@ -31,17 +31,22 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 ```
 4) Then build it:
 ```
-cmake --build build
+cmake --build build --config Release
 ```
-That was it! The code should be build and the result
-is in the `build` directory.
+The `--config` switch can be omitted if we don't use multi-target
+CMake generators.
+
+That was it! The code should be build and the result is in the
+`build` directory.
 
 Run automated tests
 -------------------
 This step is optional for normal users.
+```
+ctest --test-dir build --build-config Release
+```
 
-Go to `build` directory and run `ctest`. All available tests
-will be run. All of them must pass!
+All available tests will be run. All of them must pass!
 
 Installing
 ----------
@@ -51,14 +56,14 @@ I recommend using `Program Files` as destination.
 
 We can also use CMake to do this.
 ```
-cmake --install build
+cmake --install build --config Release
 ```
 The command above installs RawDev to the correct system directory.
 This will, of course, require having elevated user privileges.
 
 For local installation, use the `--prefix` switch.
 ```
-cmake --install build --prefix <install dir>
+cmake --install build --config Release --prefix <install dir>
 ```
 
 Alternative for Windows
