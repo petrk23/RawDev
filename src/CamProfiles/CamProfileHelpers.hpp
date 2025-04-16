@@ -25,7 +25,7 @@
 
 #define CAMPROFILE_BASICS(cam, name)                    \
     static constexpr std::string_view k_camName = name; \
-    Cam##cam(double ctemp);                             \
+    explicit Cam##cam(double ctemp);                    \
     std::string_view getCameraName() const override     \
     {                                                   \
         return k_camName;                               \
