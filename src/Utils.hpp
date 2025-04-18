@@ -26,7 +26,6 @@
 #include <cmath>
 #include <cstdint>
 #include <cstring>
-#include <ctime>
 
 struct Mat3x3;
 
@@ -144,19 +143,6 @@ inline uint16_t byteSwapU16(uint16_t val)
 #else // We are on Unix. Also GCC and CLANG buildin.
     return __builtin_bswap16(val);
 #endif
-}
-
-inline struct tm* localTime(const time_t* time, struct tm* buf)
-{
-    struct tm* res;
-
-#ifdef _WIN32
-    localtime_s(buf, time);
-    res = buf;
-#else
-    res = localtime_r(time, buf);
-#endif
-    return res;
 }
 
 }; // namespace Utils

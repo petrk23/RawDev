@@ -20,29 +20,18 @@
 
 #pragma once
 
-#include "Structures/Path.hpp"
-#include <string>
+#include <chrono>
 
-class Image;
-class Options;
+namespace TimeUtils {
 
-class OutputModule {
-    Path m_InputFile, m_OutputFile;
-    std::string m_Artist;
+std::chrono::local_seconds localNow();
 
-public:
-    static void run(Image& img, const Options& opt);
+inline int localYear()
+{
+    const auto ymd = std::chrono::year_month_day{
+        std::chrono::floor<std::chrono::days>(localNow())};
 
-private:
-    OutputModule(const Options& opt);
-    void process(Image& img, const Options& opt);
+    return static_cast<int>(ymd.year());
+}
 
-private: // Helpers
-    std::string formatCopyright() const;
-    static void conversionMessage(const char* profileName, const char* curveName);
-
-private: // Gamma correction
-    static void convert2argb(Image& img);
-    static void convert2srgb(Image& img);
-    static double srgbGammaCurve(double value);
-};
+} // namespace TimeUtils

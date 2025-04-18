@@ -20,19 +20,15 @@
 
 #include "Output.hpp"
 
-#include "Options.hpp"
-#include "RawDev.hpp"
-#include "Structures/Image.hpp"
-
 #include "ArtistNameValidator.hpp"
 #include "CamProfiles/CamProfile.hpp"
 #include "ImageIO/TiffWriter.hpp"
+#include "Options.hpp"
+#include "RawDev.hpp"
+#include "Structures/Image.hpp"
 #include "Structures/Mat3x3.hpp"
-#include "Utils.hpp"
+#include "TimeUtils.hpp"
 
-#include <cassert>
-#include <ctime>
-#include <iostream>
 #include <sstream>
 
 using namespace std;
@@ -125,22 +121,10 @@ std::string OutputModule::formatCopyright() const
 {
     if (!m_Artist.empty()) {
         stringstream ss;
-        ss << "Copyright (C) " << getYear() << " by " << m_Artist;
+        ss << "Copyright (C) " << TimeUtils::localYear() << " by " << m_Artist;
         return ss.str();
     }
     return m_Artist;
-}
-
-/// <summary>
-/// Get current year
-/// </summary>
-/// <returns>Year as a integer</returns>
-int OutputModule::getYear()
-{
-    time_t t = time(NULL);
-    tm time; // Get time from OS
-    Utils::localTime(&t, &time);
-    return time.tm_year + 1900;
 }
 
 /// <summary>

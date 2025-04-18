@@ -20,19 +20,19 @@
 
 #include "TiffWriter.hpp"
 
-#include "TiffHeader.hpp"
 #include "ByteTag.hpp"
-#include "StringTag.hpp"
 #include "LongTag.hpp"
-#include "ShortTag.hpp"
 #include "RationalTag.hpp"
+#include "ShortTag.hpp"
+#include "StringTag.hpp"
+#include "TiffHeader.hpp"
 
-#include "Structures/Array2D.hpp"
-#include "Structures/Rect.hpp"
 #include "CamProfiles/CamProfile.hpp"
 #include "Color.hpp"
 #include "Exception.hpp"
-#include "Utils.hpp"
+#include "Structures/Array2D.hpp"
+#include "Structures/Rect.hpp"
+#include "TimeUtils.hpp"
 #include "Version.hpp"
 
 // ICC color profiles
@@ -40,7 +40,7 @@
 #include "ColorProfiles/AdobeRGB1998-icc.hpp"
 #include "ColorProfiles/srgb-icc.hpp"
 
-#include <ctime>
+#include <format>
 #include <memory>
 using namespace std;
 
@@ -121,14 +121,9 @@ void TiffWriter::setStringTag(TiffTag::ID id, const string& val)
 /// </summary>
 void TiffWriter::setDateTimeTag()
 {
-    time_t rawtime; time(&rawtime);
-    tm timeinfo; Utils::localTime(&rawtime, &timeinfo);
-    char timebuff[32];
-
-    // Format to string and set tag
-    strftime(timebuff, 32, "%Y:%m:%d %T", &timeinfo);
-    setStringTag(TiffTag::ID::DateTime, timebuff);
-    return;
+    const std::string creationDate = format(
+        "{0:%Y}:{0:%m}:{0:%d} {0:%T}", TimeUtils::localNow());
+    setStringTag(TiffTag::ID::DateTime, creationDate);
 }
 
 /// <summary>

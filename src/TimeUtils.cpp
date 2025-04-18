@@ -18,31 +18,19 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#pragma once
+#include "TimeUtils.hpp"
 
-#include "Structures/Path.hpp"
-#include <string>
+std::chrono::local_seconds TimeUtils::localNow()
+{
+    const auto now = std::chrono::floor<std::chrono::seconds>(
+        std::chrono::system_clock::now());
+    std::chrono::zoned_time zoned;
 
-class Image;
-class Options;
-
-class OutputModule {
-    Path m_InputFile, m_OutputFile;
-    std::string m_Artist;
-
-public:
-    static void run(Image& img, const Options& opt);
-
-private:
-    OutputModule(const Options& opt);
-    void process(Image& img, const Options& opt);
-
-private: // Helpers
-    std::string formatCopyright() const;
-    static void conversionMessage(const char* profileName, const char* curveName);
-
-private: // Gamma correction
-    static void convert2argb(Image& img);
-    static void convert2srgb(Image& img);
-    static double srgbGammaCurve(double value);
-};
+    try {
+        zoned = std::chrono::zoned_time{std::chrono::current_zone(), now};
+    }
+    catch (const std::runtime_error&) {
+        zoned = std::chrono::zoned_time{now}; // Fallback to UTC
+    }
+    return zoned.get_local_time();
+}

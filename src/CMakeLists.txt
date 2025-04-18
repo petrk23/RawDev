@@ -75,6 +75,8 @@ add_library(RawDevLib STATIC
     Structures/Path.hpp
     Structures/Point.hpp
     Structures/Rect.hpp
+    TimeUtils.cpp
+    TimeUtils.hpp
     Utils.cpp
     Utils.hpp
     Version.hpp
